@@ -96,8 +96,10 @@ h1, h2, h3 {
 }
 
 .site-title {
-  font-size: 26px;
-  letter-spacing: -0.01em;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: 6px;
 }
 
 .site-tagline {
@@ -178,7 +180,9 @@ nav.site-nav a:hover {
 }
 
 .entry-title {
-  font-size: 21px;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 19px;
   margin-bottom: 6px;
 }
 
