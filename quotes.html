@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quotes · Meadows Field Notes</title>
+<meta name="description" content="Lines worth keeping from the field.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  /* Quote list — built from the same tokens as style.css, scoped to this page */
+  .quote-log {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quote-card {
+    padding: 28px 0;
+    border-bottom: 1px solid var(--tan-line);
+  }
+
+  .quote-card:first-of-type { padding-top: 4px; }
+
+  .quote-text {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-style: italic;
+    line-height: 1.4;
+    color: var(--moss-dark);
+    border-left: 2px solid var(--moss);
+    padding-left: 20px;
+    margin: 0 0 14px;
+  }
+
+  .quote-source {
+    font-family: var(--sans);
+    font-size: 15px;
+    color: var(--ink-soft);
+    padding-left: 22px;
+    margin-bottom: 6px;
+  }
+
+  .quote-meta {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--stone);
+    padding-left: 22px;
+  }
+
+  @media (max-width: 520px) {
+    .quote-text { font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="masthead-inner">
+      <svg class="contour-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M20 4 C28 4 34 10 34 18 C34 26 28 32 20 32 C12 32 6 26 6 18 C6 10 12 4 20 4 Z"/>
+        <path d="M20 10 C24.5 10 28 13.5 28 18 C28 22.5 24.5 26 20 26 C15.5 26 12 22.5 12 18 C12 13.5 15.5 10 20 10 Z"/>
+        <path d="M20 15 C21.8 15 23 16.4 23 18 C23 19.6 21.8 21 20 21 C18.2 21 17 19.6 17 18 C17 16.4 18.2 15 20 15 Z"/>
+      </svg>
+      <div>
+        <div class="site-title">Field Notes</div>
+        <div class="site-tagline">A park journal</div>
+      </div>
+    </div>
+    <nav class="site-nav">
+      <a href="index.html">All entries</a>
+      <a href="about.html">About</a>
+      <a href="about-me.html">About Me</a>
+      <a href="quotes.html">Quotes</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap log">
+
+  <!--
+    TO ADD A NEW QUOTE:
+    1. Copy one <div class="quote-card"> block below and paste it above
+       this comment.
+    2. Edit:
+         - quote-text: the quote itself
+         - quote-source: who said/wrote it (delete the div to omit)
+         - quote-meta: date · location, same format as the entries page
+  -->
+
+  <div class="quote-log">
+
+    <div class="quote-card">
+      <p class="quote-text">Replace this with your first quote.</p>
+      <div class="quote-source">— Someone, somewhere</div>
+      <div class="quote-meta">July 22, 2026 · Charlotte, NC</div>
+    </div>
+
+    <div class="quote-card">
+      <p class="quote-text">In every walk with nature one receives far more than he seeks.</p>
+      <div class="quote-source">— John Muir</div>
+      <div class="quote-meta">July 20, 2026 · Camp North End</div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">Field Notes - updated regularly (i hope). Built as a static site.</div>
+</footer>
+
+</body>
+</html>
