@@ -246,6 +246,14 @@ a.entry-link:hover .entry-title { color: var(--moss-dark); }
   border-radius: 2px;
 }
 
+.post-body figure img.vertical {
+  width: 60%;
+  max-width: 320px;
+  aspect-ratio: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
 .post-body figcaption {
   font-family: var(--mono);
   font-size: 12px;
